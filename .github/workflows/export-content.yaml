@@ -33,11 +33,24 @@ jobs:
           --environment-id $ENVIRONMENT_ID \
           --management-token $MGMT_TOKEN \
           --export-dir ./exports \
-          --content-only false \
-          --save-file contentful-export-${BUILD_NUMBER}.json
+          --content-only false
+
+        echo "Export completed. Files in exports:"
+        ls -lh ./exports
+
+        # Capture the generated file name
+        EXPORT_FILE=$(ls ./exports/*.json | head -n 1)
+
+        echo "Original file: $EXPORT_FILE"
+
+        # Rename to include build number
+        mv "$EXPORT_FILE" "./exports/contentful-export-${BUILD_NUMBER}.json"
+
+        echo "Renamed to: ./exports/contentful-export-${BUILD_NUMBER}.json"
 
     - name: Upload export as artifact
       uses: actions/upload-artifact@v4
       with:
         name: contentful-export-${{ env.BUILD_NUMBER }}
         path: ./exports/contentful-export-${{ env.BUILD_NUMBER }}.json
+
