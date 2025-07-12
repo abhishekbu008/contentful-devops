@@ -1,0 +1,41 @@
+name: Promote Contentful Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target Contentful Environment (stage or prod)'
+        required: true
+        default: 'stage'
+      artifact_build_number:
+        description: 'Artifact build number to import (e.g., 42)'
+        required: true
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+
+    env:
+      SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      MGMT_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_TOKEN }}
+
+    steps:
+    - name: Install Contentful CLI
+      run: npm install -g contentful-cli
+
+    - name: Download export artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: contentful-export-${{ github.event.inputs.artifact_build_number }}
+        path: ./exports
+
+    - name: List downloaded files
+      run: ls -lh ./exports
+
+    - name: Import content into target environment
+      run: |
+        contentful space import \
+          --space-id $SPACE_ID \
+          --environment-id ${{ github.event.inputs.environment }} \
+          --management-token $MGMT_TOKEN \
+          --content-file ./exports/contentful-export-${{ github.event.inputs.artifact_build_number }}.json

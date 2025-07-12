@@ -1,0 +1,43 @@
+name: Export Contentful Content
+
+on:
+  workflow_dispatch:
+  # Uncomment to schedule daily at 2AM UTC
+  # schedule:
+  #   - cron: '0 2 * * *'
+
+jobs:
+  export-content:
+    runs-on: ubuntu-latest
+
+    env:
+      SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      MGMT_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_TOKEN }}
+      ENVIRONMENT_ID: dev
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Contentful CLI
+      run: npm install -g contentful-cli
+
+    - name: Set Build Number
+      run: echo "BUILD_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
+
+    - name: Export content from Contentful
+      run: |
+        mkdir -p exports
+        contentful space export \
+          --space-id $SPACE_ID \
+          --environment-id $ENVIRONMENT_ID \
+          --management-token $MGMT_TOKEN \
+          --export-dir ./exports \
+          --content-only false \
+          --save-file contentful-export-${BUILD_NUMBER}.json
+
+    - name: Upload export as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: contentful-export-${{ env.BUILD_NUMBER }}
+        path: ./exports/contentful-export-${{ env.BUILD_NUMBER }}.json
