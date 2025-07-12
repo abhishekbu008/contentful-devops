@@ -6,7 +6,7 @@ on:
       target_environment:
         description: 'Target environment (stage or prod)'
         required: true
-        default: 'stage'
+        default: 'prod'
 
 jobs:
   export-content:
