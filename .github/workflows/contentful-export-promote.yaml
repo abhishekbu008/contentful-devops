@@ -1,0 +1,88 @@
+name: Export and Promote Contentful Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_environment:
+        description: 'Target environment (stage or prod)'
+        required: true
+        default: 'stage'
+
+jobs:
+  export-content:
+    runs-on: ubuntu-latest
+
+    env:
+      SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      MGMT_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_TOKEN }}
+      ENVIRONMENT_ID: dev
+
+    outputs:
+      export_file: ${{ steps.rename-export.outputs.export_file }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Contentful CLI
+      run: npm install -g contentful-cli
+
+    - name: Set Build Number
+      run: echo "BUILD_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
+
+    - name: Export content from Contentful
+      run: |
+        mkdir -p exports
+        contentful space export \
+          --space-id $SPACE_ID \
+          --environment-id $ENVIRONMENT_ID \
+          --management-token $MGMT_TOKEN \
+          --export-dir ./exports \
+          --content-only false
+
+        echo "Files after export:"
+        ls -lh ./exports
+
+    - name: Rename export file with build number
+      id: rename-export
+      run: |
+        EXPORT_FILE=$(ls ./exports/*.json | head -n 1)
+        NEW_FILE="./exports/contentful-export-${BUILD_NUMBER}.json"
+        mv "$EXPORT_FILE" "$NEW_FILE"
+        echo "Renamed export to $NEW_FILE"
+        echo "export_file=$NEW_FILE" >> $GITHUB_OUTPUT
+
+    - name: Upload export artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: contentful-export-${{ github.run_number }}
+        path: ./exports/contentful-export-${{ github.run_number }}.json
+
+  promote-content:
+    needs: export-content
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.target_environment }}-approval
+
+    env:
+      SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      MGMT_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_TOKEN }}
+
+    steps:
+    - name: Install Contentful CLI
+      run: npm install -g contentful-cli
+
+    - name: Download export artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: contentful-export-${{ github.run_number }}
+        path: ./exports
+
+    - name: Import content into ${{ github.event.inputs.target_environment }}
+      run: |
+        IMPORT_FILE=$(ls ./exports/*.json | head -n 1)
+        echo "Importing $IMPORT_FILE to ${{ github.event.inputs.target_environment }}..."
+        contentful space import \
+          --space-id $SPACE_ID \
+          --environment-id ${{ github.event.inputs.target_environment }} \
+          --management-token $MGMT_TOKEN \
+          --content-file "$IMPORT_FILE"
