@@ -1,0 +1,4569 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "destination",
+        "type": "ContentType",
+        "createdAt": "2025-06-17T16:32:23.521Z",
+        "updatedAt": "2025-06-17T16:35:29.432Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-17T16:35:29.432Z",
+        "firstPublishedAt": "2025-06-17T16:32:24.050Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/destination"
+      },
+      "displayField": "name",
+      "name": "Destination",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "images",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "country",
+          "name": "country",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "travelTips",
+          "name": "travel tips",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "travelPackage",
+        "type": "ContentType",
+        "createdAt": "2025-06-17T16:40:17.597Z",
+        "updatedAt": "2025-06-17T16:40:18.121Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-17T16:40:18.121Z",
+        "firstPublishedAt": "2025-06-17T16:40:18.121Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/travelPackage"
+      },
+      "displayField": "title",
+      "name": "Travel Package",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "price",
+          "type": "Number",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "includes",
+          "name": "includes",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "bannerImage",
+          "name": "bannerImage",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "availability",
+          "name": "availability",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2025-06-17T16:43:31.283Z",
+        "updatedAt": "2025-06-17T16:43:31.778Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-17T16:43:31.778Z",
+        "firstPublishedAt": "2025-06-17T16:43:31.778Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/blogPost"
+      },
+      "displayField": "title",
+      "name": "Blog Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "content",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "coverImage",
+          "name": "coverImage",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "relatedDestinations",
+          "name": "relatedDestinations",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "author",
+          "name": "author",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "offer",
+        "type": "ContentType",
+        "createdAt": "2025-06-17T16:48:16.274Z",
+        "updatedAt": "2025-06-18T12:33:27.950Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-18T12:33:27.950Z",
+        "firstPublishedAt": "2025-06-17T16:48:16.800Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/offer"
+      },
+      "displayField": "title",
+      "name": "Offer",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "discountPercentage",
+          "name": "discountPercentage",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "validFrom",
+          "name": "validFrom",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "validTo",
+          "name": "validTo",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "isActive",
+          "name": "isActive",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "targetPlatforms",
+          "name": "targetPlatforms",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "mobile",
+                "web",
+                "both"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "faq",
+        "type": "ContentType",
+        "createdAt": "2025-06-17T16:49:08.599Z",
+        "updatedAt": "2025-06-17T16:49:09.120Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-17T16:49:09.120Z",
+        "firstPublishedAt": "2025-06-17T16:49:09.120Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/faq"
+      },
+      "displayField": "question",
+      "name": "FAQ",
+      "description": "",
+      "fields": [
+        {
+          "id": "question",
+          "name": "question",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "answer",
+          "name": "answer",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "mobileAppTheme",
+        "type": "ContentType",
+        "createdAt": "2025-06-26T10:33:04.738Z",
+        "updatedAt": "2025-06-26T10:48:15.160Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2025-06-26T10:48:15.160Z",
+        "firstPublishedAt": "2025-06-26T10:33:05.508Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/content_types/mobileAppTheme"
+      },
+      "displayField": "themeName",
+      "name": "MobileAppTheme",
+      "description": "",
+      "fields": [
+        {
+          "id": "themeName",
+          "name": "themeName",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "primaryColor",
+          "name": "primaryColor",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryColor",
+          "name": "secondaryColor",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundColor",
+          "name": "backgroundColor",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "surfacecolor",
+          "name": "surfacecolor",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "textColorPrimary",
+          "name": "textColorPrimary",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "textColorSecondary",
+          "name": "textColorSecondary",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fontFamily",
+          "name": "fontFamily",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fontFiles",
+          "name": "fontFiles",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "fontSizeBase",
+          "name": "fontSizeBase",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "borderRadius",
+          "name": "borderRadius",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "spacingUnit",
+          "name": "spacingUnit",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "isDefault",
+          "name": "isDefault",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonStyle",
+          "name": "buttonStyle",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "fonts",
+        "type": "Tag",
+        "createdAt": "2025-06-26T10:45:04.461Z",
+        "updatedAt": "2025-06-26T10:45:04.461Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "version": 1,
+        "visibility": "private"
+      },
+      "name": "fonts"
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-17T16:32:24.197Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-17T16:35:30.367Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "destination",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "country",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "travelTips",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-17T16:40:18.319Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-17T16:40:19.105Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "travelPackage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "includes",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bannerImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "availability",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-17T16:43:31.961Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-17T16:43:32.755Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "coverImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "relatedDestinations",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-17T16:48:16.992Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-18T12:33:28.940Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "offer",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "discountPercentage",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "validFrom",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "validTo",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "isActive",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "targetPlatforms",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-17T16:49:09.293Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-17T16:49:10.097Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "faq",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "question",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "answer",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "dhlxohpfats4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2025-06-26T10:33:05.728Z",
+        "createdBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-26T10:48:16.367Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2TYGlnAzOKKdn6aIq0UxV7",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "mobileAppTheme",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "themeName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "primaryColor",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "secondaryColor",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundColor",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "surfacecolor",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "textColorPrimary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "textColorSecondary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fontFamily",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fontFiles",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fontSizeBase",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "borderRadius",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "spacingUnit",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "isDefault",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonStyle",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "61fUP9lPAMBEYi7wzGKwMo",
+        "type": "Entry",
+        "createdAt": "2025-06-17T16:50:29.245Z",
+        "updatedAt": "2025-06-17T17:14:52.148Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2025-06-17T17:14:52.148Z",
+        "firstPublishedAt": "2025-06-17T16:52:56.795Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "destination"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/61fUP9lPAMBEYi7wzGKwMo"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Paris",
+          "fr": "Paris"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "The romantic city of lights, known for its art, culture, and gastronomy. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "La ville romantique des lumières, réputée pour son art, sa culture et sa gastronomie.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "images": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "176wCX0GXl2ghxoAt7c4Ii"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "i1XR9TBG2aM53Te2NXDL1"
+              }
+            }
+          ]
+        },
+        "country": {
+          "en-US": "France",
+          "fr": "France"
+        },
+        "travelTips": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Best visited in Spring or Fall. Avoid August crowds. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "À visiter de préférence au printemps ou en automne. Évitez les foules en août. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "slug": {
+          "en-US": "paris"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "Qoy1ygF7uXiPHZauGyHn0",
+        "type": "Entry",
+        "createdAt": "2025-06-17T16:53:08.775Z",
+        "updatedAt": "2025-06-26T10:14:09.626Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2025-06-26T10:14:09.626Z",
+        "firstPublishedAt": "2025-06-17T16:55:03.988Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "destination"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/Qoy1ygF7uXiPHZauGyHn0"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Kyoto master",
+          "fr": "Kyoto"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Japan’s ancient capital, rich in temples and gardens. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "L’ancienne capitale du Japon, célèbre pour ses temples et ses jardins. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "images": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7DPk2mUgx5RXHt6AcnBM4N"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3vM8TRsoUhWdpVoaQUqgfx"
+              }
+            }
+          ]
+        },
+        "country": {
+          "en-US": "Japan",
+          "fr": "Japan"
+        },
+        "travelTips": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Cherry blossom season (April) is beautiful but crowded. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "La saison des cerisiers en fleurs (avril) est magnifique mais très fréquentée. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "slug": {
+          "en-US": "kyoto"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "1UV25Rg7Ht9b99qtKrDXyo",
+        "type": "Entry",
+        "createdAt": "2025-06-17T16:55:28.799Z",
+        "updatedAt": "2025-06-17T17:16:44.760Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2025-06-17T17:16:44.760Z",
+        "firstPublishedAt": "2025-06-17T16:57:48.248Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "travelPackage"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/1UV25Rg7Ht9b99qtKrDXyo"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Romantic Escape to Paris",
+          "fr": "Évasion romantique à Paris"
+        },
+        "slug": {
+          "en-US": "romantic-paris"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "3 nights in a luxury hotel, Seine river cruise, Louvre tickets. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "3 nuits dans un hôtel de luxe, croisière sur la Seine, billets pour le Louvre. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "price": {
+          "en-US": 799
+        },
+        "includes": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "61fUP9lPAMBEYi7wzGKwMo"
+              }
+            }
+          ]
+        },
+        "bannerImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5ZyjJyUt3SbAXGMclzwDeE"
+            }
+          }
+        },
+        "availability": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "6xuktY0gZtsHN3cSKfCdd",
+        "type": "Entry",
+        "createdAt": "2025-06-17T16:58:13.171Z",
+        "updatedAt": "2025-06-17T17:20:44.126Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2025-06-17T17:20:44.126Z",
+        "firstPublishedAt": "2025-06-17T16:59:52.945Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "travelPackage"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/6xuktY0gZtsHN3cSKfCdd"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Japan Heritage Tour",
+          "fr": "Circuit Patrimoine du Japon"
+        },
+        "slug": {
+          "en-US": "japan-heritage-tour"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Visit Tokyo, Kyoto, Nara over 7 days. Includes Bullet Train Pass. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Visitez Tokyo, Kyoto et Nara en 7 jours. Comprend le pass train à grande vitesse. ",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "price": {
+          "en-US": 1599
+        },
+        "includes": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Qoy1ygF7uXiPHZauGyHn0"
+              }
+            }
+          ]
+        },
+        "bannerImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7nUnyJPhMOzuw4jTQznzAB"
+            }
+          }
+        },
+        "availability": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "2gtnjJa5aLdCxTmojcdLPI",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:01:55.849Z",
+        "updatedAt": "2025-06-19T12:27:30.222Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2025-06-19T12:27:30.222Z",
+        "firstPublishedAt": "2025-06-17T17:04:00.179Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/2gtnjJa5aLdCxTmojcdLPI"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Top 5 Things to Do in Paris.",
+          "fr": "Top 5 des choses à faire à Paris"
+        },
+        "slug": {
+          "en-US": "top-5-paris"
+        },
+        "content": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Visit the Eiffel Tower, explore Montmartre, and try authentic croissants. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Visitez la Tour Eiffel, explorez Montmartre et dégustez des croissants authentiques. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "coverImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7MM8tzuPTmigbcQ4SzHgZU"
+            }
+          }
+        },
+        "relatedDestinations": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "61fUP9lPAMBEYi7wzGKwMo"
+              }
+            }
+          ]
+        },
+        "author": {
+          "en-US": "Lisa Dupont"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "3bkpzlOml9QJBcazIdK77F",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:04:27.800Z",
+        "updatedAt": "2025-06-17T17:21:39.017Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2025-06-17T17:21:39.017Z",
+        "firstPublishedAt": "2025-06-17T17:05:52.890Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/3bkpzlOml9QJBcazIdK77F"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Japan’s Best Temples and Shrines",
+          "fr": "Les plus beaux temples et sanctuaires du Japon"
+        },
+        "slug": {
+          "en-US": "japan-temples"
+        },
+        "content": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Discover Kyoto’s Fushimi Inari Shrine and the famous Kinkaku-ji ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Découvrez le sanctuaire Fushimi Inari de Kyoto et le célèbre Kinkaku-ji ",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "coverImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5VMwbRvDotiniplaioF3LH"
+            }
+          }
+        },
+        "relatedDestinations": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Qoy1ygF7uXiPHZauGyHn0"
+              }
+            }
+          ]
+        },
+        "author": {
+          "en-US": "Takashi Yamada"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "5cdBVn4nPY4qf9ClwA0e8l",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:06:13.197Z",
+        "updatedAt": "2025-06-17T17:21:59.477Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2025-06-17T17:21:59.477Z",
+        "firstPublishedAt": "2025-06-17T17:07:22.191Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "offer"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/5cdBVn4nPY4qf9ClwA0e8l"
+      },
+      "fields": {
+        "title": {
+          "en-US": "20% Off Romantic Escape",
+          "fr": "20 % de réduction sur l’Évasion romantique"
+        },
+        "description": {
+          "en-US": "Limited time 20% off on Paris Romantic Package",
+          "fr": "Offre limitée : -20 % sur le séjour romantique à Paris."
+        },
+        "discountPercentage": {
+          "en-US": 20
+        },
+        "validFrom": {
+          "en-US": "2025-06-20T00:00+05:30"
+        },
+        "validTo": {
+          "en-US": "2025-07-05T00:00+05:30"
+        },
+        "isActive": {
+          "en-US": true
+        },
+        "targetPlatforms": {
+          "en-US": "both"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "2jBnN9DMXZHFVVlsvYhM7P",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:07:29.665Z",
+        "updatedAt": "2025-06-17T17:22:17.378Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2025-06-17T17:22:17.378Z",
+        "firstPublishedAt": "2025-06-17T17:08:07.084Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "offer"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/2jBnN9DMXZHFVVlsvYhM7P"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mobile Exclusive Japan Tour Offer",
+          "fr": "Offre exclusive mobile — Circuit Japon"
+        },
+        "description": {
+          "en-US": "Save $100 on bookings via mobile app",
+          "fr": "Économisez 100 $ sur les réservations via l’application mobile."
+        },
+        "discountPercentage": {
+          "en-US": 10
+        },
+        "validFrom": {
+          "en-US": "2025-07-01T00:00+05:30"
+        },
+        "validTo": {
+          "en-US": "2025-07-10T00:00+05:30"
+        },
+        "isActive": {
+          "en-US": false
+        },
+        "targetPlatforms": {
+          "en-US": "mobile"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "7eAe6yrSetZ9pcYXtpKW6q",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:08:18.004Z",
+        "updatedAt": "2025-06-17T17:22:43.921Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-17T17:22:43.921Z",
+        "firstPublishedAt": "2025-06-17T17:08:31.203Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faq"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/7eAe6yrSetZ9pcYXtpKW6q"
+      },
+      "fields": {
+        "question": {
+          "en-US": "Is travel insurance included in packages?",
+          "fr": "L’assurance voyage est-elle incluse dans les forfaits ?"
+        },
+        "answer": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "No, travel insurance is optional and can be added separately. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Non, l’assurance voyage est facultative et peut être ajoutée séparément. ",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "66ZHtbu19iQxTepFXNwOIB",
+        "type": "Entry",
+        "createdAt": "2025-06-17T17:08:37.249Z",
+        "updatedAt": "2025-06-17T17:23:03.912Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-06-17T17:23:03.912Z",
+        "firstPublishedAt": "2025-06-17T17:08:45.239Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faq"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/66ZHtbu19iQxTepFXNwOIB"
+      },
+      "fields": {
+        "question": {
+          "en-US": "Are visa fees covered?",
+          "fr": "Les frais de visa sont-ils inclus ?"
+        },
+        "answer": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Visa fees are not included in package pricing. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "fr": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Les frais de visa ne sont pas inclus dans le prix des forfaits. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "378eWbA5eGadBTu5L9RofX",
+        "type": "Entry",
+        "createdAt": "2025-06-26T10:34:24.405Z",
+        "updatedAt": "2025-06-26T10:49:03.026Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-06-26T10:49:03.026Z",
+        "firstPublishedAt": "2025-06-26T10:46:25.306Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "mobileAppTheme"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/entries/378eWbA5eGadBTu5L9RofX"
+      },
+      "fields": {
+        "themeName": {
+          "en-US": "Light"
+        },
+        "primaryColor": {
+          "en-US": "#6200EE"
+        },
+        "secondaryColor": {
+          "en-US": "#03DAC6"
+        },
+        "backgroundColor": {
+          "en-US": "#FFFFFF"
+        },
+        "surfacecolor": {
+          "en-US": "#F5F5F5"
+        },
+        "textColorPrimary": {
+          "en-US": "#000000"
+        },
+        "textColorSecondary": {
+          "en-US": "#666666"
+        },
+        "fontFamily": {
+          "en-US": "Roboto"
+        },
+        "fontFiles": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2jB7yMlQB7Fpx2QIzapsj9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5ZvzGXb1d2QXL5p80b3OVR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "66XYR2rOUi0nDSL87Q2q2Y"
+              }
+            }
+          ]
+        },
+        "fontSizeBase": {
+          "en-US": "16px"
+        },
+        "borderRadius": {
+          "en-US": "8px"
+        },
+        "spacingUnit": {
+          "en-US": "8px"
+        },
+        "isDefault": {
+          "en-US": true
+        },
+        "buttonStyle": {
+          "en-US": {
+            "textColor": "#FFFFFF",
+            "backgroundColor": "#6200EE"
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "MdJQcz1ZErTcV7h3sIVss",
+        "type": "Asset",
+        "createdAt": "2025-04-17T15:40:08.605Z",
+        "updatedAt": "2025-04-17T15:42:01.396Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-04-17T15:42:01.396Z",
+        "firstPublishedAt": "2025-04-17T15:42:01.396Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/MdJQcz1ZErTcV7h3sIVss"
+      },
+      "fields": {
+        "title": {
+          "en-US": "profile 1"
+        },
+        "description": {
+          "en-US": "profile 1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/MdJQcz1ZErTcV7h3sIVss/57d95d523401b704eaab0ef60cd7f0cf/profile-1.jpg",
+            "details": {
+              "size": 84997,
+              "image": {
+                "width": 1920,
+                "height": 1920
+              }
+            },
+            "fileName": "profile-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "1iliMiDvopmHTJ5cS0WzDc",
+        "type": "Asset",
+        "createdAt": "2025-04-17T15:42:40.661Z",
+        "updatedAt": "2025-04-17T15:42:58.445Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-04-17T15:42:58.445Z",
+        "firstPublishedAt": "2025-04-17T15:42:58.445Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/1iliMiDvopmHTJ5cS0WzDc"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Profile 2"
+        },
+        "description": {
+          "en-US": "Profile 2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/1iliMiDvopmHTJ5cS0WzDc/ee453fd35536657c6fa4dbbff83ecf87/profile-2.jpg",
+            "details": {
+              "size": 75970,
+              "image": {
+                "width": 1125,
+                "height": 1390
+              }
+            },
+            "fileName": "profile-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "5UC74qovNFGI8Xu8sxwHb9",
+        "type": "Asset",
+        "createdAt": "2025-04-17T16:18:08.607Z",
+        "updatedAt": "2025-04-17T16:18:25.213Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-04-17T16:18:25.213Z",
+        "firstPublishedAt": "2025-04-17T16:18:25.213Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/5UC74qovNFGI8Xu8sxwHb9"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Blog 1"
+        },
+        "description": {
+          "en-US": "Blog 1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/5UC74qovNFGI8Xu8sxwHb9/a69c9e3961805c9b84510e654fb63c96/blog-1.jpg",
+            "details": {
+              "size": 10059,
+              "image": {
+                "width": 275,
+                "height": 183
+              }
+            },
+            "fileName": "blog-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "78wCXRgVqUBgsIWEReen4R",
+        "type": "Asset",
+        "createdAt": "2025-04-17T16:19:21.740Z",
+        "updatedAt": "2025-04-17T16:19:40.894Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-04-17T16:19:40.894Z",
+        "firstPublishedAt": "2025-04-17T16:19:40.894Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/78wCXRgVqUBgsIWEReen4R"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Blog 2"
+        },
+        "description": {
+          "en-US": "Blog 2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/78wCXRgVqUBgsIWEReen4R/b49a5130b3e2ab797686d390e7c17c42/blog-2.jpg",
+            "details": {
+              "size": 12705,
+              "image": {
+                "width": 275,
+                "height": 183
+              }
+            },
+            "fileName": "blog-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "3ckB7cQkyOs33jgduYbpgZ",
+        "type": "Asset",
+        "createdAt": "2025-04-17T16:21:15.048Z",
+        "updatedAt": "2025-04-17T16:21:32.739Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-04-17T16:21:32.739Z",
+        "firstPublishedAt": "2025-04-17T16:21:32.739Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/3ckB7cQkyOs33jgduYbpgZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Blog 3"
+        },
+        "description": {
+          "en-US": "Blog 3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/3ckB7cQkyOs33jgduYbpgZ/02bad73f922384a7c429acc1080b8d5c/blog-3.jpg",
+            "details": {
+              "size": 8950,
+              "image": {
+                "width": 275,
+                "height": 183
+              }
+            },
+            "fileName": "blog-3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "176wCX0GXl2ghxoAt7c4Ii",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:51:42.184Z",
+        "updatedAt": "2025-06-17T16:52:06.657Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:52:06.657Z",
+        "firstPublishedAt": "2025-06-17T16:52:06.657Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/176wCX0GXl2ghxoAt7c4Ii"
+      },
+      "fields": {
+        "title": {
+          "en-US": "paris"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/176wCX0GXl2ghxoAt7c4Ii/57337845fc57a77622f256b6736f84a2/paris.jpg",
+            "details": {
+              "size": 489322,
+              "image": {
+                "width": 1400,
+                "height": 1400
+              }
+            },
+            "fileName": "paris.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "i1XR9TBG2aM53Te2NXDL1",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:52:14.988Z",
+        "updatedAt": "2025-06-17T16:52:32.704Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:52:32.704Z",
+        "firstPublishedAt": "2025-06-17T16:52:32.704Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/i1XR9TBG2aM53Te2NXDL1"
+      },
+      "fields": {
+        "title": {
+          "en-US": "eiffel"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/i1XR9TBG2aM53Te2NXDL1/2b0c768b0b892f84ae7451fd3ddbb1d9/eiffel.jpg",
+            "details": {
+              "size": 4337484,
+              "image": {
+                "width": 2900,
+                "height": 4830
+              }
+            },
+            "fileName": "eiffel.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "7DPk2mUgx5RXHt6AcnBM4N",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:53:39.347Z",
+        "updatedAt": "2025-06-17T16:54:13.421Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:54:13.421Z",
+        "firstPublishedAt": "2025-06-17T16:54:13.421Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/7DPk2mUgx5RXHt6AcnBM4N"
+      },
+      "fields": {
+        "title": {
+          "en-US": "kyoto"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/7DPk2mUgx5RXHt6AcnBM4N/105eddeb22fa2ad84eb1736d09576f47/kyoto.jpg",
+            "details": {
+              "size": 124000,
+              "image": {
+                "width": 1020,
+                "height": 498
+              }
+            },
+            "fileName": "kyoto.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "3vM8TRsoUhWdpVoaQUqgfx",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:54:44.933Z",
+        "updatedAt": "2025-06-17T16:54:57.445Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:54:57.445Z",
+        "firstPublishedAt": "2025-06-17T16:54:57.445Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/3vM8TRsoUhWdpVoaQUqgfx"
+      },
+      "fields": {
+        "title": {
+          "en-US": "fushimi"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/3vM8TRsoUhWdpVoaQUqgfx/a9db1a651bb2ab4f0b989592d165b3f5/fushimi.jpg",
+            "details": {
+              "size": 275212,
+              "image": {
+                "width": 1024,
+                "height": 683
+              }
+            },
+            "fileName": "fushimi.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "5ZyjJyUt3SbAXGMclzwDeE",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:57:07.666Z",
+        "updatedAt": "2025-06-17T16:57:33.212Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:57:33.212Z",
+        "firstPublishedAt": "2025-06-17T16:57:33.212Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/5ZyjJyUt3SbAXGMclzwDeE"
+      },
+      "fields": {
+        "title": {
+          "en-US": "romantic_paris"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/5ZyjJyUt3SbAXGMclzwDeE/09046227aaaaa1ae3dd7e3f6586d85f5/romantic-paris.jpg",
+            "details": {
+              "size": 146111,
+              "image": {
+                "width": 1024,
+                "height": 683
+              }
+            },
+            "fileName": "romantic-paris.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "7nUnyJPhMOzuw4jTQznzAB",
+        "type": "Asset",
+        "createdAt": "2025-06-17T16:59:23.386Z",
+        "updatedAt": "2025-06-17T16:59:40.663Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T16:59:40.663Z",
+        "firstPublishedAt": "2025-06-17T16:59:40.663Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/7nUnyJPhMOzuw4jTQznzAB"
+      },
+      "fields": {
+        "title": {
+          "en-US": "japan_package"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/7nUnyJPhMOzuw4jTQznzAB/a99b9a3775e637f37fef297c715900ba/japan-package.jpg",
+            "details": {
+              "size": 102548,
+              "image": {
+                "width": 870,
+                "height": 555
+              }
+            },
+            "fileName": "japan-package.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "7MM8tzuPTmigbcQ4SzHgZU",
+        "type": "Asset",
+        "createdAt": "2025-06-17T17:03:16.394Z",
+        "updatedAt": "2025-06-17T17:03:31.064Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T17:03:31.064Z",
+        "firstPublishedAt": "2025-06-17T17:03:31.064Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/7MM8tzuPTmigbcQ4SzHgZU"
+      },
+      "fields": {
+        "title": {
+          "en-US": "top-5-paris"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/7MM8tzuPTmigbcQ4SzHgZU/52434e72b713e125b131f450dff1cb1a/top-5-paris.jpg",
+            "details": {
+              "size": 93782,
+              "image": {
+                "width": 800,
+                "height": 420
+              }
+            },
+            "fileName": "top-5-paris.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "5VMwbRvDotiniplaioF3LH",
+        "type": "Asset",
+        "createdAt": "2025-06-17T17:05:18.829Z",
+        "updatedAt": "2025-06-17T17:05:36.424Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-17T17:05:36.424Z",
+        "firstPublishedAt": "2025-06-17T17:05:36.424Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/5VMwbRvDotiniplaioF3LH"
+      },
+      "fields": {
+        "title": {
+          "en-US": "japan-temples"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/dhlxohpfats4/5VMwbRvDotiniplaioF3LH/86485b847db22b7847d8158e193a8f68/japan-temples.jpg",
+            "details": {
+              "size": 13231,
+              "image": {
+                "width": 273,
+                "height": 185
+              }
+            },
+            "fileName": "japan-temples.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Tag",
+              "id": "fonts"
+            }
+          }
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "66XYR2rOUi0nDSL87Q2q2Y",
+        "type": "Asset",
+        "createdAt": "2025-06-26T10:44:18.481Z",
+        "updatedAt": "2025-06-26T10:45:30.646Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-26T10:45:30.646Z",
+        "firstPublishedAt": "2025-06-26T10:44:40.186Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/66XYR2rOUi0nDSL87Q2q2Y"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Roboto-Black"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/dhlxohpfats4/66XYR2rOUi0nDSL87Q2q2Y/71eab7af77bb361908cd5fe68ed97504/Roboto-Black.ttf",
+            "details": {
+              "size": 147424
+            },
+            "fileName": "Roboto-Black.ttf",
+            "contentType": "application/font-sfnt"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Tag",
+              "id": "fonts"
+            }
+          }
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "2jB7yMlQB7Fpx2QIzapsj9",
+        "type": "Asset",
+        "createdAt": "2025-06-26T10:44:18.482Z",
+        "updatedAt": "2025-06-26T10:45:30.656Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-26T10:45:30.656Z",
+        "firstPublishedAt": "2025-06-26T10:44:40.189Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/2jB7yMlQB7Fpx2QIzapsj9"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Roboto-Italic"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/dhlxohpfats4/2jB7yMlQB7Fpx2QIzapsj9/7952459a32a9ee5e686e5ae888e18d5d/Roboto-Italic.ttf",
+            "details": {
+              "size": 152208
+            },
+            "fileName": "Roboto-Italic.ttf",
+            "contentType": "application/font-sfnt"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Tag",
+              "id": "fonts"
+            }
+          }
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "id": "5ZvzGXb1d2QXL5p80b3OVR",
+        "type": "Asset",
+        "createdAt": "2025-06-26T10:44:18.557Z",
+        "updatedAt": "2025-06-26T10:45:30.653Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-26T10:45:30.653Z",
+        "firstPublishedAt": "2025-06-26T10:44:40.183Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "fr": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/dhlxohpfats4/environments/dev/assets/5ZvzGXb1d2QXL5p80b3OVR"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Roboto-Bold"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/dhlxohpfats4/5ZvzGXb1d2QXL5p80b3OVR/cc86d34226b869a62f872f954d297627/Roboto-Bold.ttf",
+            "details": {
+              "size": 146768
+            },
+            "fileName": "Roboto-Bold.ttf",
+            "contentType": "application/font-sfnt"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "30NrFd8NfI5fkQ5M2F2JaK",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "dev",
+            "uuid": "c484b7db-d3c0-4adb-b757-a89d42282715"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "createdAt": "2025-06-19T11:50:47Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedAt": "2025-06-19T11:50:47Z"
+      }
+    },
+    {
+      "name": "French",
+      "code": "fr",
+      "fallbackCode": "en-US",
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "656TPCY2s7InVPwMzhFhA6",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "dhlxohpfats4"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "dev",
+            "uuid": "c484b7db-d3c0-4adb-b757-a89d42282715"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "createdAt": "2025-06-19T11:50:47Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2TYGlnAzOKKdn6aIq0UxV7"
+          }
+        },
+        "updatedAt": "2025-06-19T11:50:47Z"
+      }
+    }
+  ]
+}
