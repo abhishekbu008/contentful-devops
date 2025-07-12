@@ -6,7 +6,7 @@ on:
       environment:
         description: 'Target Contentful Environment (stage or prod)'
         required: true
-        default: 'stage'
+        default: 'prod'
       artifact_build_number:
         description: 'Artifact build number to import (e.g., 42)'
         required: true
